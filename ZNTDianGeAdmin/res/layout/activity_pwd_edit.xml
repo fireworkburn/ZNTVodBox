@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/view_pwd_edit_bottom"
+        android:layout_marginBottom="1dp"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:textSize="@dimen/normal_text_size"
+		        android:textColor="@color/text_black_mid"
+		        android:text="请输入旧密码："
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/et_pwd_edit_old"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:inputType="textPassword"
+		        style="@style/EditTextBg"
+		        />
+            <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="10dp"
+		        android:textSize="@dimen/normal_text_size"
+		        android:textColor="@color/text_black_mid"
+		        android:text="请输入新密码："
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/et_pwd_edit_new"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:inputType="textPassword"
+		        style="@style/EditTextBg"
+		        />
+            <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="10dp"
+		        android:textSize="@dimen/normal_text_size"
+		        android:textColor="@color/text_black_mid"
+		        android:text="请再次输入密码："
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/et_pwd_edit_confirm"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:inputType="textPassword"
+		        style="@style/EditTextBg"
+		        android:imeOptions="actionGo"
+		        />
+		    
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/spacebar"
+        android:layout_above="@+id/view_pwd_edit_bottom"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/view_pwd_edit_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bg"
+        >
+        <TextView 
+            android:id="@+id/tv_pwd_edit_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerInParent="true"
+            style="@style/ButtonNormal"
+            android:text="确认修改"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

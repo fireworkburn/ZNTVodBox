@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FTP服务器</string>
+    <string name="versionnum">V1.0.0</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="about">关于</string>
+    <string name="report">反馈建议</string>
+    <string name="setting">设置</string>
+    <string name="server_control_charset">传输编码</string>
+    <string name="utf8_title">UTF-8编码</string>
+    <string name="utf8_summary">系统FTP默认编码</string>
+    <string name="gbk_title">GBK编码</string>
+    <string name="gbk_summary">中文出现乱码时选择此项</string>
+    <string name="stay_awake_title">保持唤醒状态</string>
+    <string name="stay_awake_summary">使用FTP时屏幕不会休眠</string>
+    <string name="ftp_transfer_secure">传输安全</string>
+    <string name="ftp_port_number">端口号</string>
+    <string name="ftp_account_req_notice">您的用户名与密码长度必须为4－16字符。可以使用特殊符号，字母区分大小写。</string>
+    <string name="ftp_open_port_error">无法打开端口，请确认网络已连接或重新设置端口号。</string>
+    <string name="ftp_anonymous_login">匿名登录</string>
+    <string name="ftp_username_and_passworld">用户名与密码</string>
+    <string name="ftp_username_hint">用户名</string>
+    <string name="ftp_password_hint">密码</string>
+    <string name="ftp_invalid_username_or_password">用户名或密码无效</string>
+    <string name="start_server">启动服务</string>
+    <string name="stop_server">停止服务</string>
+    <string name="notif_server_starting">远程管理服务已启动</string>
+    <string name="notif_title">远程管理服务正在运行</string>
+    <string name="wifi_state">WLAN状态</string>
+    <string name="instruction_pre">启动后可以从电脑端远程管理手机文件</string>
+    <string name="instruction">请在“我的电脑”地址栏中输入：</string>
+    <string name="no_wifi">无WiFi网络</string>
+    <string name="no_wifi_hint">无WiFi网络,点击以查看WiFi设置</string>
+    <string name="storage_warning">外部存储不可用.</string>
+     <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请选择邮件的方式将此错误报告提交给我，我会尽快修复这个问题，谢谢！</string>
+    <string name="submit_report">提交报告</string>
+    <string name="username_validation_error">用户名至少需要包括一个或更多字符，不允许为空。</string>
+    <string name="password_validation_error">密码至少需要包括一个或更多字符，不允许为空。</string>
+    <string name="port_validation_error">端口号必须在 1 至 65535 之间。</string>
+    <string name="all_rights_reserved">Copyright © 2012-2013 Way. All Rights Reserved.</string>
+    <string name="app_information">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\
+        本应用是基于开源项目SwiFTP的一款轻量级FTP服务器，如果想了解更多,\
+        欢迎访问我的博客主页：http://blog.csdn.net/way_ping_li ,\
+        由于时间仓促，错误与疏忽之处在所难免,\
+        希望各位朋友们以邮件的形式反馈问题给我,再次表示感谢!</string>
+    <string name="help_dlg_message">\
+1.首先感谢您使用 FTP服务器！下面是简要的使用说明,更多\
+使用信息欢迎光临我的博客 http://blog.csdn.net/way_ping_li 查看。\n\n\
+\
+2.本应用是一个可以运行在您Android设备中的FTP服务，也就是说\
+当您开启本服务，就可以使用无线网络访问您设备指定目录中的\
+所有文件，例如在电脑的Chrome浏览器地址\
+栏中输入 \"ftp://...\" 。\n\n
+\
+3.本应用初始化用户名和密码均为 \"way\"，您可以在使用\
+时修改，也可以使用匿名访问。\n\n
+\
+4.在设置选项中的“保持设备唤醒”可以使您的设备\
+在运行本服务时不会进入休眠，如果您的设\
+备在息屏后传输速度变慢或完全停止，可以打开\
+此选项，并重启服务。\n\n
+\
+5.为了延长您设备的电池寿命，建议您在使用后关闭此服务。\n\n\
+\
+6.如果在使用本应用中遇到任何问题，都可以将问题反馈\
+给我(way.ping.li@gmail.com)。\n\n\
+\</string>
+
+</resources>

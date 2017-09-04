@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <ScrollView 
+        android:id="@+id/sv_music_lib"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	        <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="160dp"
+		        >
+		        <com.znt.vodbox.view.ChildViewPager
+			        android:id="@+id/vp_music_library_adver"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="fill_parent"
+			    	android:clickable="false"
+			        ></com.znt.vodbox.view.ChildViewPager>
+		        <LinearLayout 
+		            android:id="@+id/view_music_library_indicator"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/vp_music_library_adver"
+		            android:gravity="center_horizontal"
+		            android:orientation="horizontal"
+		            android:padding="4dp"
+		            ></LinearLayout>
+		    </RelativeLayout>
+		
+		    <EditText
+		        android:id="@+id/et_library_music_search"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="输入歌曲/歌手名称"
+		        android:singleLine="true"
+		        android:padding="8dp"
+		        android:textSize="@dimen/normal_text_size" 
+		        android:editable="false"
+		        android:clickable="true"
+		        android:focusable="false"
+		        android:background="@drawable/sel_edittext_bg"
+		        android:layout_margin="5dp"
+		        android:drawableLeft="@drawable/icon_search"
+		        ></EditText>
+		    
+		    <View 
+		        android:layout_width="fill_parent"
+		        android:layout_height="6dp"
+		        android:background="@color/center_bg"
+		        />
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        >
+		        
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_phone"
+			        android:layout_width="0dp"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="1.0"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        
+		        <View 
+		            android:layout_width="1sp"
+		            android:layout_height="fill_parent"
+		            android:background="@color/spacebar"
+		            />
+		        
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_speaker"
+			        android:layout_width="0dp"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="1.0"
+			        ></com.znt.vodbox.view.ItemTextView>
+		    </LinearLayout>
+		    
+		    <View 
+		         android:layout_width="fill_parent"
+		         android:layout_height="6dp"
+		         android:background="@color/center_bg"
+		         />
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:background="@color/white"
+		        >
+		        
+		        
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_qingyl"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_xiaoqx"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_wangluo"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_xiaoyuan"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        
+		        
+		        <View 
+		            android:layout_width="fill_parent"
+		            android:layout_height="1dp"
+		            android:background="@color/spacebar"
+		            />
+		        <View 
+		            android:layout_width="fill_parent"
+		            android:layout_height="6dp"
+		            android:background="@color/center_bg"
+		            />
+		        
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_xinqing"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_jieri"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_changjing"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_huanjing"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        
+		        <View 
+		            android:layout_width="fill_parent"
+		            android:layout_height="6dp"
+		            android:background="@color/center_bg"
+		            android:visibility="gone"
+		            />
+		        
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_90"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:visibility="gone"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_80"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:visibility="gone"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        <com.znt.vodbox.view.ItemTextView
+			        android:id="@+id/itv_category_70"
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:visibility="gone"
+			        ></com.znt.vodbox.view.ItemTextView>
+		        
+		    </LinearLayout>
+	    </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="bottom"
+    android:id="@+id/view_hint_dialog_bg"
+    android:background="@color/transparent">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:paddingBottom="26dp"
+    	android:gravity="center_vertical"
+    	android:background="@color/white"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="2dp"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_blue_on"
+                android:textSize="@dimen/normal_text_size"
+                android:text="@string/wenxin_notice"
+                />
+            <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/spacebar"
+	            />
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_blue_on"
+                android:textSize="@dimen/normal_text_size"
+                android:text="@string/dianbo_notice"
+                />
+        </LinearLayout>
+        
+        <CheckBox 
+            android:id="@+id/cb_dialog_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="6dp"
+            android:text="@string/no_hint_anymore"
+            android:textColor="@color/text_black_on"
+            android:textSize="@dimen/normal_text_size"
+            style="@style/SelectCheckBox"
+            />
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/spacebar"
+            />
+        <TextView 
+            android:id="@+id/tv_dialog_hint_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/text_blue_on"
+            android:text="@string/i_know"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:background="@drawable/sel_item_bg"
+            android:textSize="@dimen/normal_text_size"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

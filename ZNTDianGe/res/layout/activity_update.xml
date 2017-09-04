@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_black_mid"
+            android:textSize="@dimen/title_text_size"
+            android:text="Home音乐全新升级"
+            />
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <ScrollView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_above="@+id/view_update_confirm"
+	            >
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="428dp"
+	                android:orientation="vertical"
+	                android:background="@drawable/style_item_bg_frame"
+	                android:layout_margin="5dp"
+	                >
+	                <TextView
+	                    android:id="@+id/tv_update_desc" 
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:minLines="16"
+			            android:gravity="left"
+			            android:padding="14dp"
+			            android:textColor="@color/text_black_mid"
+			            android:textSize="@dimen/normal_text_size"
+			            />
+	            </LinearLayout>
+	        </ScrollView>
+	        <RelativeLayout 
+	            android:id="@+id/view_update_confirm"
+	            android:layout_width="fill_parent"
+	            android:layout_height="80dp"
+	            android:layout_alignParentBottom="true"
+	            >
+	            <TextView 
+	            	android:id="@+id/tv_update_confirm"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="57dp"
+		            android:layout_marginRight="57dp"
+		            android:layout_centerVertical="true"
+		            style="@style/ButtonNormal"
+		            android:text="立即升级"
+		            />
+	        </RelativeLayout>
+	        
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    
+</RelativeLayout>

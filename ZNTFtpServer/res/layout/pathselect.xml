@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/pathselect_title"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/chat_title_bg_repeat"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <TextView
+            android:id="@+id/main_title_name"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:singleLine="true"
+            android:text="选择路径" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mPath"
+        style="@style/B4_Font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pathselect_title"
+        android:padding="5dip"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            style="@style/B4_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/btn_bg"
+            android:text="@android:string/ok"
+            android:textColor="@color/common_btn_color" />
+
+        <Button
+            android:id="@+id/buttonCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:text="@android:string/cancel"
+            android:textColor="@color/common_btn_color" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonlayout"
+        android:layout_below="@id/mPath"
+        android:divider="@null"
+        android:listSelector="@null" />
+
+</RelativeLayout>

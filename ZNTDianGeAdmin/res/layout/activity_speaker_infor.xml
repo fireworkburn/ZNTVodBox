@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            >
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:paddingBottom="20dp"
+	            >
+                <RelativeLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="32dp"
+                    >
+                    <TextView 
+			            android:id="@+id/tv_speaker_infor_title"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerHorizontal="true"
+			            android:textSize="@dimen/title_text_size"
+			            android:textColor="@color/text_blue_on"
+			            android:textStyle="bold"
+			            />
+		            
+		            <ImageView 
+				        android:id="@+id/iv_speaker_infor_qrcode"
+				        android:layout_width="280dp"
+				        android:layout_height="280dp"
+				        android:layout_centerHorizontal="true"
+				        android:layout_below="@+id/tv_speaker_infor_title"
+				        android:scaleType="centerCrop"
+				        />
+			        
+			        <TextView 
+			            android:id="@+id/tv_speaker_infor_hint"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/iv_speaker_infor_qrcode"
+			            android:layout_marginTop="6dp"
+			            android:layout_centerHorizontal="true"
+			            android:textSize="@dimen/normal_text_size"
+			            android:textColor="@color/text_black_on"
+			            android:text="@string/scan_qrcode_connect"
+			            />
+			        
+			        <TextView 
+			            android:id="@+id/tv_speaker_infor_change"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/tv_speaker_infor_hint"
+			            android:layout_marginTop="12dp"
+			            android:layout_centerHorizontal="true"
+			            style="@style/ButtonTranslucent_1"
+			            android:paddingLeft="30dp"
+			            android:paddingRight="30dp"
+			            android:text="@string/change_speaker"
+			            android:visibility="gone"
+			            />
+			        <TextView 
+			            android:id="@+id/tv_speaker_infor_save"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/tv_speaker_infor_change"
+			            android:layout_marginTop="12dp"
+			            android:layout_centerHorizontal="true"
+			            style="@style/ButtonTranslucent_1"
+			            android:paddingLeft="30dp"
+			            android:paddingRight="30dp"
+			            android:text="保存二维码"
+			            android:singleLine="false"
+			            android:visibility="gone"
+			            />
+			        <TextView 
+			            android:id="@+id/tv_speaker_infor_savepath"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/tv_speaker_infor_hint"
+			            android:layout_marginTop="12dp"
+			            android:layout_centerHorizontal="true"
+			            android:paddingLeft="12dp"
+			            android:paddingRight="12dp"
+			            android:visibility="gone"
+			            />
+                </RelativeLayout>
+	            
+	        </LinearLayout>
+        </ScrollView>
+        
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

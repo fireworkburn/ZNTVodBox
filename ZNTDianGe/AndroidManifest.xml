@@ -1,0 +1,278 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.znt.diange"
+    android:versionCode="17"
+    android:versionName="2.1.2"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> 
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+	<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+	
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:name=".activity.MyApplication"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"  
+        android:persistent="true"     
+        >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fdb88450f1e8465a79920c91b9bf54b0" />
+        <!-- begin: baidu speech sdk-->
+        <!-- <meta-data android:name="com.baidu.speech.API_KEY" android:value="OtrfwcGD9Ig5gjQXK7tGXFzy"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="49d198c4e65238f77be951117b385c15"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+        <activity
+                android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+                android:configChanges="orientation|keyboardHidden|screenLayout"
+                android:theme="@android:style/Theme.Dialog"
+                android:exported="false"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> -->
+        <!-- end : baidu speech sdk-->
+        
+        <!-- 友盟 配置开始-->
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- 微信相关 -->
+		<activity
+		   android:name="com.znt.diange.wxapi.WXEntryActivity"
+		   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		   android:configChanges="keyboardHidden|orientation|screenSize"
+		   android:exported="true"
+		   android:screenOrientation="portrait" />
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="1104930384" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5707184667e58e7ab5000a27" >
+        </meta-data>
+        <!-- 4eaee02c527015373b000003 -->
+        <!-- android:value="52a98cf856240b902211203e" > -->
+        <!-- 友盟 配置结束-->
+        
+        <!-- 友盟数据统计开始 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Wandoujia" >
+        </meta-data>
+        <!-- 友盟数据统计开结束-->
+        
+        <!-- 短信相关 -->
+        <activity
+			android:name="com.mob.tools.MobUIShell"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:windowSoftInputMode="stateHidden|adjustResize"/>
+        
+        <!-- 新浪微博相关 -->
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="2616775278" />
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo" />
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" ></service>
+        <!-- 新浪微博配置结束 -->
+        
+		<activity
+            android:name="com.znt.diange.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<service android:name="com.znt.diange.service.MediaScanService" android:enabled="true">
+            </service>
+		<service android:name=".service.DeviceCheckService" ></service>
+		
+		<receiver android:name=".receiver.BootCompleteReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+            <intent-filter android:priority="90000">   
+            	<!-- <action android:name="android.intent.action.PACKAGE_ADDED" /> 
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+                <data android:scheme="package" />  
+        	</intent-filter>   
+        </receiver>
+		
+		<activity 
+		    android:name="com.znt.diange.activity.MainActivity"
+		    android:launchMode="singleTop"
+		    android:screenOrientation="portrait"
+		    android:configChanges="keyboardHidden|orientation|screenSize"
+		    ></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.SearchDeviceActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.FeedBackActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.HelpActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.AboutActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.CaptureActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.SearchMusicActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.LocalMusicActivity"
+		    android:launchMode="singleTop"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.LocalMusicActivity1"
+		    android:launchMode="singleTop"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.SongInforActivity"
+		    android:screenOrientation="portrait"
+		    android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.KuwoCategoryActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.KuwoMusicActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.KuwoSecondCategoryActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.SongPrepareActivity"
+		    android:screenOrientation="portrait"
+		    android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.DeviceSelectActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.SpeakerInforActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.DeviceEditActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.NetWorkChangeActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.DeviceControllActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.PermissionActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.AccountActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.UserInforEditAct"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.PwdEditActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.CoinGetActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name="com.znt.diange.activity.RegisterActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.NetDeviceActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.SongBookActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.BindSpeakesActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.WYMusicActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.AddAdminActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.ShopSongRecordActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity 
+		    android:name=".activity.SongCommentActivity"
+		    android:screenOrientation="portrait"></activity>
+		
+    </application>
+	
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        <com.znt.vodbox.view.listview.LJListView
+	        android:id="@+id/ptrl_shop_music"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        ></com.znt.vodbox.view.listview.LJListView>
+        
+        <RelativeLayout 
+            android:id="@+id/view_shop_detail_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/style_item_bg_frame"
+            android:padding="1dp"
+            android:visibility="gone"
+            >
+            
+            <TextView 
+                android:id="@+id/tv_shop_music_bottom_application"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/sel_item_bg"
+                android:textColor="@color/text_blue_on"
+                android:text="应用到其他店铺"
+                />
+            <TextView 
+                android:id="@+id/tv_shop_music_bottom_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_shop_music_bottom_add"
+                android:layout_marginRight="6dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/sel_item_bg"
+                android:textColor="@color/text_blue_on"
+                android:text="清空歌曲"
+                />
+            <TextView 
+                android:id="@+id/tv_shop_music_bottom_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/sel_item_bg"
+                android:textColor="@color/text_blue_on"
+                android:text="添加歌曲"
+                />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

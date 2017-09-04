@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black" >
+
+    <GridView android:layout_width="match_parent"
+        android:id="@+id/apps_list"
+        android:numColumns="2"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="32dp"
+        ></GridView>
+    
+    <LinearLayout 
+        android:id="@+id/view_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+        
+        <TextView 
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新应用"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginRight="6dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/sel_item_bg_frame"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+        
+        <TextView 
+            android:id="@+id/btn_wifi_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络配置"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/sel_item_bg_frame"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView 
+            android:id="@+id/btn_system_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统配置"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/sel_item_bg_frame"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+            />
+        
+        <TextView 
+            android:id="@+id/btn_auto_open_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SP开启"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/sel_item_bg_frame"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+            android:focusable="true"
+            />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

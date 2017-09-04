@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Retrieved via Resources.getColor() and friends. -->
+	<color name="red">#f00</color>
+	<color name="green">#0f0</color>
+	<color name="blue">#00f</color>
+	<color name="black">#ff000000</color>
+	<color name="gray">#ddd</color>
+	<color name="white">#ffffff</color>
+	<color name="visualize_fx">#44b121</color>
+	
+	<color name="lyrics">#a3bfe5</color>
+    <color name="lyrics_hl">#7aba78</color>
+    
+    
+     <color name="main_bg">#dd5100</color>
+     <color name="title_bg">#292929</color>
+     <color name="title_bg_alph">#b0292929</color>
+     <color name="title_text_bg_off">#a0ffffff</color>
+     <color name="main_bottom_controll_bg">#f8f8f8</color>
+     <color name="progress_bg">#d8d8d8</color>
+     <color name="center_bg">#f3f3f3</color>
+     <color name="dialog_bg">#f1f1f1</color>
+     <color name="text_black_off">#9c9c9c</color>
+     <color name="text_black_mid">#666666</color>
+     <color name="text_black_on">#ff121212</color>
+     <color name="text_blue_off">#fb967b</color>
+     <color name="text_blue_on">#ec6400</color>
+     <color name="text_bg">#50000000</color>
+     
+     <color name="spacebar">#f3f3f3</color>
+	 <color name="spacebar_1">#d0d0d0</color>
+	 <color name="translucent">#b0000000</color>
+	 <color name="transparent">#00000000</color>
+	 
+	 <color name="item_bg_on">#e2e2e2</color>
+	 <color name="item_bg_main">#ec6400</color>
+	 
+	 
+	 <color name="btn_common_on">#fb7d20</color>
+	 <color name="btn_common_off">#ec6400</color>
+	 
+	  <color name="contents_text">#ff000000</color>
+	  <color name="encode_view">#ffffffff</color>
+	  <color name="help_button_view">#ffcccccc</color>
+	  <color name="help_view">#ff404040</color>
+	  <color name="possible_result_points">#c0ffff00</color>  
+	  <color name="result_image_border">#ffffffff</color>
+	  <color name="result_minor_text">#ffc0c0c0</color>
+	  <color name="result_points">#c000ff00</color>
+	  <color name="result_text">#ffffffff</color>
+	  <color name="result_view">#b0000000</color>
+	  <color name="sbc_header_text">#ff808080</color>
+	  <color name="sbc_header_view">#ffffffff</color>
+	  <color name="sbc_list_item">#fffff0e0</color>
+	  <color name="sbc_layout_view">#ffffffff</color>
+	  <color name="sbc_page_number_text">#ff000000</color>
+	  <color name="sbc_snippet_text">#ff4b4b4b</color>
+	  <color name="share_text">#ff000000</color>
+	  <color name="share_view">#ffffffff</color>
+	  <color name="status_view">#50000000</color>
+	  <color name="status_text">#ffffffff</color>
+	  <color name="viewfinder_frame">#ff000000</color>
+	  <color name="viewfinder_laser">#ffff0000</color>
+	  <color name="viewfinder_mask">#60000000</color>
+	  
+	  <color name="image_checked_bg">#66000000</color>
+    
+    
+    
+</resources>

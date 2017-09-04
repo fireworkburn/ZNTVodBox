@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/center_bg"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/view_add_admin_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="12dp"
+	    android:layout_marginRight="12dp"
+        android:background="@drawable/style_view_bg_frame"
+        android:orientation="vertical"
+        >
+        <TextView 
+	        android:id="@+id/tv_add_admin_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="12dp"
+	        android:paddingBottom="4dp"
+	        android:textSize="@dimen/normal_text_size"
+	        android:textColor="@color/text_black_mid"
+	        android:text="手机号码"
+	        />
+	    <EditText 
+	        android:id="@+id/et_add_admin_num"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:hint="请输入要添加的手机号码"
+	        android:singleLine="true"
+	        android:maxLength="18"
+	        android:background="@drawable/sel_edittext_bg"
+	        android:textColor="@color/text_black_on"
+	        android:textSize="@dimen/title_text_size"
+	        />
+	    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view_add_admin_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" 
+    	android:layout_marginTop="8dp"
+        >
+        
+        <TextView 
+            android:id="@+id/btn_add_admin_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="确定添加"
+            style="@style/ButtonNormal"
+            />
+        
+    </LinearLayout>
+
+</RelativeLayout>

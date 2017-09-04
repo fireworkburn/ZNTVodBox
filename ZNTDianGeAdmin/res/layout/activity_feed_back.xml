@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+        <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+		    
+            <ScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/view_feed_back_bottom_operation"
+                >
+                <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+	                android:layout_marginBottom="38dp"
+	                >
+	                <com.znt.vodbox.view.EditTextView
+			            android:id="@+id/et_feed_back_content"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="26dp"
+			            android:layout_marginRight="26dp"
+			            ></com.znt.vodbox.view.EditTextView>
+	                <com.znt.vodbox.view.EditTextView
+			            android:id="@+id/et_feed_back_contact"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="26dp"
+			            android:layout_marginRight="26dp"
+			            ></com.znt.vodbox.view.EditTextView>
+			        
+	            </LinearLayout>
+            </ScrollView>
+            
+	        <LinearLayout
+	            android:id="@+id/view_feed_back_bottom_operation" 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="20dp"
+	            >
+	            <TextView 
+	                android:id="@+id/tv_feed_back_confirm"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="20dp"
+	            	android:layout_marginRight="20dp"
+	                android:textColor="@color/text_blue_on"
+            		style="@style/ButtonTranslucent_2"
+	                android:text="提交反馈"
+	                />
+	        </LinearLayout>
+	        
+	    </RelativeLayout>
+
+</LinearLayout>

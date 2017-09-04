@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <com.znt.diange.view.pulltozoom.view.PullToZoomListViewEx
+        android:id="@+id/ptzl_song_queues"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:headerView="@layout/view_song_header"
+        custom:zoomView="@layout/view_song_header_bg"
+        android:cacheColorHint="#00000000" 
+        android:divider="#dedede"
+        android:dividerHeight="1dp"
+        android:background="@color/transparent" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_song_header_top"
+        android:alpha="0.8"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/view_song_head_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:paddingTop="60dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:background="@drawable/bg_song_header"
+        android:alpha="0.0"
+        android:clickable="true"
+        >
+        <TextView 
+	        android:id="@+id/tv_song_music_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:textSize="@dimen/title_text_size"
+	        android:textColor="@color/text_blue_off"
+	        android:layout_centerHorizontal="true"
+	        android:singleLine="true"
+	        android:ellipsize="marquee" 
+	        android:focusable="true" 
+	        android:marqueeRepeatLimit="marquee_forever" 
+	        android:focusableInTouchMode="true" 
+	        android:scrollHorizontally="true"
+	        />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tv_song_header_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/LargeTextSize"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+        <TextView 
+	        android:id="@+id/tv_song_hint"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="230dp"
+	        android:textSize="@dimen/normal_text_size"
+	        android:textColor="@color/text_black_on"
+	        android:layout_gravity="center_horizontal"
+	        />
+	    <TextView 
+	        android:id="@+id/tv_song_dianbo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6dp"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/ButtonTranslucent_1"
+	        android:text="开始点歌"
+	        android:visibility="gone"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_song_device_select"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="6dp"
+	        android:paddingLeft="36dp"
+	        android:paddingRight="36dp"
+	        android:paddingTop="12dp"
+	        android:paddingBottom="12dp"
+	        style="@style/ButtonTranslucent_3"
+	        android:textSize="18sp"
+	        android:text="点击添加设备"
+	        android:textColor="@color/text_blue_on"
+	        />
+	    
+    </LinearLayout>
+    
+
+</RelativeLayout>

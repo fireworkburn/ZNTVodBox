@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view_dialog_devices_bg"
+     >
+
+    <RelativeLayout 
+        android:id="@+id/view_dialog_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="35dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        
+        <com.znt.diange.view.MyScrollListView
+	        android:id="@+id/lv_devices"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/tv_device_dialog_cancel"
+	        ></com.znt.diange.view.MyScrollListView>
+        
+        <TextView 
+            android:id="@+id/tv_device_dialog_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_bg"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:gravity="center"
+            android:textSize="@dimen/title_text_size"
+            android:background="@drawable/sel_item_bg"
+            android:text="取消"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

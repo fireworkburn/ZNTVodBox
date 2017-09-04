@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+
+    <RelativeLayout
+        android:id="@+id/view_music_album_item_left" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/sel_item_bg_frame"
+        android:layout_weight="1.0"
+        android:layout_marginRight="2dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_music_album_item_cover_left"
+            android:layout_width="fill_parent"
+            android:layout_height="102dp"
+            android:scaleType="centerCrop"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_music_album_item_name_left"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/iv_music_album_item_cover_left"
+            android:padding="6dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/text_black_on"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/view_music_album_item_right" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="4dp"
+        android:padding="6dp"
+        android:background="@drawable/sel_item_bg_frame"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="2dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_music_album_item_cover_right"
+            android:layout_width="fill_parent"
+            android:layout_height="102dp"
+            android:scaleType="centerCrop"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_music_album_item_name_right"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/iv_music_album_item_cover_right"
+            android:padding="6dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/text_black_on"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

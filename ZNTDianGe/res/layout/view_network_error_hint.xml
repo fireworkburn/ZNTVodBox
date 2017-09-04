@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/center_bg" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <ImageView
+            android:id="@+id/iv_network_setting_icon" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/icon_wifi"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_network_setting_hint" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_network_setting_icon"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/text_black_on"
+            android:text="连接WIFI网络才能工作哦~"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_network_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_network_setting_hint"
+            android:layout_marginTop="38dp"
+            android:textColor="@color/main_bg"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="网络连接"
+            android:textSize="@dimen/title_text_size"
+            style="@style/ButtonTranslucent"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/text_black_mid"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

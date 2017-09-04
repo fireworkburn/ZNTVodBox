@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/chat_title_bg_repeat"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <TextView
+            android:id="@+id/main_title_name"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:singleLine="true"
+            android:text="@string/setting" />
+    </RelativeLayout>
+
+    <com.way.scrollview.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/coversation_bg"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/chat_background"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/choose_dir_item"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/common_strip_setting_top"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="选择目录" />
+
+            <TextView
+                android:id="@+id/port_item"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/common_strip_setting_bottom"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="端口号" />
+
+            <RelativeLayout
+                android:id="@+id/is_need_password_item"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/common_strip_setting_top"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    style="@style/B4_Font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="匿名登录" />
+
+                <com.way.switchbtn.SwitchButton
+                    android:id="@+id/is_need_password_switch"
+                    android:layout_width="80dip"
+                    android:layout_height="28dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/user_name_item"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/common_strip_setting_middle"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/password_item"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/common_strip_setting_middle"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="密码" />
+
+            <RelativeLayout
+                android:id="@+id/password_visiable_item"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:background="@drawable/common_strip_setting_bottom"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    style="@style/B4_Font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="显示密码" />
+
+                <com.way.switchbtn.SwitchButton
+                    android:id="@+id/password_visiable_switch"
+                    android:layout_width="80dip"
+                    android:layout_height="28dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/stay_awake_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/common_strip_setting_bg"
+                    android:clickable="false"
+                    android:focusable="false" >
+
+                    <TextView
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="保持设备唤醒" />
+
+                    <com.way.switchbtn.SwitchButton
+                        android:id="@+id/stay_awake_switch"
+                        android:layout_width="80dip"
+                        android:layout_height="28dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/feedback_item"
+                    style="@style/B4_Font_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/common_strip_setting_top"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right_gray_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="反馈" />
+
+                <TextView
+                    android:id="@+id/help_item"
+                    style="@style/B4_Font_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/common_strip_setting_middle"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right_gray_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="帮助" />
+
+                <TextView
+                    android:id="@+id/about_item"
+                    style="@style/B4_Font_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:background="@drawable/common_strip_setting_bottom"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right_gray_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="关于" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.way.scrollview.BounceScrollView>
+
+</LinearLayout>

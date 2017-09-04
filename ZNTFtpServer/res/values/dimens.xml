@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="shadow_width">15dp</dimen>
+     <dimen name="slidingmenu_offset">50dp</dimen>
+
+</resources>

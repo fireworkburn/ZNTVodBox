@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pathselect_title"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/chat_title_bg_repeat"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <TextView
+            android:id="@+id/main_title_name"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:singleLine="true"
+            android:text="帮助" />
+    </RelativeLayout>
+
+    <!--
+         <TextView
+        android:id="@+id/text"
+        style="@style/B4_Font"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@android:color/black" />
+    -->
+
+    <com.way.scrollview.BounceScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/coversation_bg"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/shape_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/A3_Font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </com.way.scrollview.BounceScrollView>
+
+</LinearLayout>

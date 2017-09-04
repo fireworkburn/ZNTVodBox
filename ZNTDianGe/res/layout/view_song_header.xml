@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView 
+        android:id="@+id/tv_song_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/main_bg"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:visibility="gone"
+        />
+    
+    <com.znt.diange.view.MarqueeTextView 
+        android:id="@+id/tv_song_header_bg_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

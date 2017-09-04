@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/text_bg" >
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="318dip"
+		android:layout_gravity="bottom"
+		android:background="@color/text_bg">
+	
+	    <ListView
+	        android:id="@+id/lv_wifilist"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@+id/tv_dialog_wifi_cancel"
+	        android:divider="@color/spacebar_1"
+	        android:dividerHeight="1dp"
+	        android:cacheColorHint="@color/transparent"
+	        android:background="#00000000">
+	    </ListView>
+	    
+	    <TextView 
+	        android:id="@+id/tv_dialog_wifi_cancel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginTop="8dp"
+	        android:paddingTop="15dp"
+	        android:paddingBottom="15dp"
+	        android:paddingLeft="22dp"
+	        android:paddingRight="22dp"
+			android:textColor="@color/main_bg"
+			android:background="@color/white"
+			android:text="@string/cancel"
+			android:clickable="true"
+	        />
+    </RelativeLayout>
+    
+</LinearLayout>

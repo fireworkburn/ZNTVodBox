@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/device_select_height"
+    android:orientation="vertical"
+    android:background="@drawable/bg_song_header"
+    >
+    
+    
+    <com.znt.diange.view.CircleImageView 
+        android:layout_width="96dp"
+	 	android:layout_height="96dp"
+	 	android:scaleType="centerCrop"
+	 	android:src="@drawable/logo"
+	 	android:layout_centerInParent="true"
+	 	android:alpha="0.8"
+        />
+    
+    <TextView
+        android:id="@+id/tv_device_select_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:textSize="@dimen/LargeTextSize"
+        android:textColor="@color/white"
+        android:text="欢迎使用人人点歌"
+        android:visibility="gone"
+        />
+    <TextView 
+       android:id="@+id/tv_device_select_hint" 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+       android:gravity="left"
+       android:textSize="@dimen/normal_text_size"
+       android:textColor="@color/white"
+       android:text="@string/device_select_hint"
+       android:visibility="gone"
+       />
+    	
+    
+    <RelativeLayout 
+        android:id="@+id/view_device_select_operation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView 
+	        android:id="@+id/tv_device_select_help"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="22dp"
+	        android:paddingRight="22dp"
+	        android:layout_alignParentLeft="true"
+	        android:clickable="true"
+	        style="@style/ButtonTranslucent"
+	        android:textColor="@color/white"
+	        android:text="操作指南"
+	        />
+        <TextView 
+	        android:id="@+id/tv_device_select_about"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="22dp"
+	        android:paddingRight="22dp"
+	        android:layout_alignParentRight="true"
+	        android:clickable="true"
+	        style="@style/ButtonTranslucent"
+	        android:textColor="@color/white"
+	        android:text="在线设备"
+	        />
+    </RelativeLayout>
+        
+    <View
+	    android:id="@+id/view_device_select_header_line" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="4dp"
+	    android:background="@color/white"
+	    android:visibility="gone"
+	    />
+        
+</RelativeLayout>

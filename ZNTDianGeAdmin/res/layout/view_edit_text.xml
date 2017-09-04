@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <View 
+       android:id="@+id/view_edit_text_top"
+       android:layout_width="fill_parent"
+       android:layout_height="1sp"
+       android:background="@color/spacebar_0"
+       />
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+        <TextView 
+            android:id="@+id/tv_edit_text_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+        	android:paddingBottom="10dp"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/text_black_on"
+            />
+        <com.znt.vodbox.view.EditCountView 
+            android:id="@+id/et_edit_text_content"
+            android:layout_width="fill_parent"
+	     	android:layout_height="wrap_content"
+	     	android:layout_toRightOf="@+id/tv_edit_text_label"
+	     	android:paddingTop="10dp"
+        	android:paddingBottom="10dp"
+	     	android:paddingLeft="6dp"
+	     	android:background="#00000000"
+	     	android:singleLine="true"
+	     	android:gravity="top"
+	     	android:textSize="@dimen/normal_text_size"
+	     	android:textColor="@color/text_black_mid"
+            />
+    </RelativeLayout>
+		<View 
+            android:id="@+id/view_edit_text_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:background="@color/spacebar_0"
+            />
+</LinearLayout>

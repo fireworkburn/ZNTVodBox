@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中未聚焦 -->
+    <item android:state_checked="true" android:state_focused="false" android:drawable="@drawable/checkbox_on" />
+     <!-- 选中聚焦 -->
+    <item android:state_checked="true" android:state_focused="true" android:drawable="@drawable/checkbox_on" />
+     <!-- 未选中未聚焦 -->
+    <item android:state_checked="false" android:state_focused="false" android:drawable="@drawable/checkbox_off" />
+    
+</selector>

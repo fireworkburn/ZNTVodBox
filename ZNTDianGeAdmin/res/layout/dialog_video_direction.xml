@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="bottom"
+    android:background="@color/transparent" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:paddingBottom="28dp"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:background="@color/transparent">
+
+	    <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            >
+            <TextView 
+                android:id="@+id/tv_video_direc_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_item_bg_frame"
+                android:padding="12dp"
+                android:text="横屏"
+                android:gravity="center"
+                />
+            <TextView 
+                android:id="@+id/tv_video_direc_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_item_bg_frame"
+                android:padding="12dp"
+                android:text="竖屏"
+                android:gravity="center"
+                />
+            <TextView 
+                android:id="@+id/tv_video_direc_three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_item_bg_frame"
+                android:padding="12dp"
+                android:text="横屏倒置"
+                android:gravity="center"
+                />
+            <TextView 
+                android:id="@+id/tv_video_direc_four"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_item_bg_frame"
+                android:padding="12dp"
+                android:text="竖屏可倒置"
+                android:gravity="center"
+                />
+        </LinearLayout>
+	    	
+	    <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/spacebar"
+            />
+	    <TextView 
+	        android:id="@+id/tv_dialog_wifi_cancel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="12dp"
+	        android:paddingBottom="12dp"
+			android:background="@drawable/sel_item_bg"
+			android:textColor="@color/main_bg"
+			android:gravity="center_horizontal"
+			android:text="取消"
+			android:clickable="true"
+	        />
+    </LinearLayout>
+    
+</LinearLayout>

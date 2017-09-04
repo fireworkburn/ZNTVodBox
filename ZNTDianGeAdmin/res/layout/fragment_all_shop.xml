@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    <!-- <com.znt.vodbox.view.PlanView 
+        android:id="@+id/pv_cur_plan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></com.znt.vodbox.view.PlanView> -->
+    <RelativeLayout 
+        android:id="@+id/view_search_shop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            >
+            <AutoCompleteTextView
+		        android:id="@+id/cet_search_shop"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="5dip"
+		        android:padding="8dp"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/sel_edittext_bg"
+		        android:drawableLeft="@drawable/icon_search"
+		        android:hint="输入店铺名称"
+		        android:singleLine="true"
+		        android:imeOptions="actionSearch"
+		        android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/tv_search_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignRight="@+id/cet_search_shop"
+                android:layout_alignTop="@+id/cet_search_shop"
+                android:layout_alignBottom="@+id/cet_search_shop"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="搜索"
+                android:gravity="center"
+                android:textSize="@dimen/normal_text_size"
+                style="@style/ButtonTranslucent_1"
+                />
+        </RelativeLayout>
+    <com.znt.vodbox.view.listview.LJListView
+        android:id="@+id/ptrl_net_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/view_search_shop"
+        ></com.znt.vodbox.view.listview.LJListView>
+	<!-- <TextView 
+	    android:id="@+id/tv_net_device_hint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:textSize="@dimen/normal_text_size"
+	    android:visibility="gone"
+	    /> -->
+</RelativeLayout>

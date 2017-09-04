@@ -1,0 +1,61 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="ButtonNormal">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/sel_btn_normal</item>
+    </style>
+    <style name="ButtonTranslucent">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/sel_btn_translucent</item>
+    </style>
+    <style name="ButtonTranslucent_1">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/sel_btn_translucent_1</item>
+    </style>
+    <style name="ButtonTranslucent_2">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/sel_btn_translucent_2</item>
+    </style>
+    <style name="ButtonTranslucent_3">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/sel_btn_translucent_3</item>
+    </style>
+
+</resources>

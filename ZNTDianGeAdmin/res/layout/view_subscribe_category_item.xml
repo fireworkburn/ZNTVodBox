@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_subscribe"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="38.0dip"
+    android:minWidth="72.0dip" >
+
+    <TextView
+        android:id="@+id/tv_channel_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/subscribe_item_bg"
+        android:gravity="center"
+        android:minHeight="38.0dip"
+        android:minWidth="72.0dip"
+        android:textColor="@color/text_blue_on"
+        android:textSize="14.0sp"
+        android:maxLines="2"
+        android:ellipsize="middle"
+        android:padding="4dp"
+         />
+    <!-- android:layout_margin="5dip" -->
+
+    <ImageView
+        android:id="@+id/iv_channel_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

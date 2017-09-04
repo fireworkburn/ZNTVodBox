@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <RelativeLayout 
+            android:id="@+id/view_music_search_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/view_music_search_operation"
+            android:background="@drawable/sel_item_bg"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="6dp"
+            >
+            <ImageView 
+	            android:id="@+id/iv_music_search_icon"
+	            android:layout_width="42dp"
+	            android:layout_height="42dp"
+	            android:padding="6dp"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/icon_music"
+	            />
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_music_search_icon"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical"
+	            >
+	            <TextView 
+		            android:id="@+id/tv_music_search_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/normal_text_size"
+		            android:textColor="@color/text_black_on"
+		            android:singleLine="true"
+		            />
+		        <TextView 
+		            android:id="@+id/tv_music_search_artist"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dp"
+		            android:textSize="@dimen/sub_text_size"
+		            android:textColor="@color/text_black_mid"
+		            android:singleLine="true"
+		            />
+	        </LinearLayout>
+        </RelativeLayout>
+        
+       <RelativeLayout 
+           	android:id="@+id/view_music_search_operation"
+           	android:layout_width="62dp"
+        	android:layout_height="fill_parent"
+        	android:layout_alignTop="@+id/view_music_search_item_content"
+        	android:layout_alignBottom="@+id/view_music_search_item_content"
+        	android:layout_alignParentRight="true"
+           	android:orientation="horizontal"
+           	android:background="@drawable/sel_item_bg"
+	       	android:padding="6dp"
+	       	android:clickable="true"
+	        >
+           <ImageView 
+               android:id="@+id/iv_music_search_item_operation"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginRight="4dp"
+               android:src="@drawable/icon_add_on"
+               android:layout_centerVertical="true"
+               android:layout_toLeftOf="@+id/tv_music_search_item_operation"
+               />
+           <TextView 
+               android:id="@+id/tv_music_search_item_operation"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:textSize="@dimen/title_text_size"
+               android:textColor="@color/text_blue_on"
+               android:text="添加"
+               />
+       </RelativeLayout>
+            
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/spacebar"
+        />
+
+    
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="bottom"
+    android:id="@+id/view_play_list_dialog_bg"
+    android:background="@color/transparent">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:paddingBottom="28dp"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:gravity="center_vertical"
+    	android:background="@color/transparent"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            >
+            <ListView 
+	            android:id="@+id/lv_play_list"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom"
+	            android:dividerHeight="1dp"
+	            android:divider="@color/spacebar"
+	            ></ListView>
+        </LinearLayout>
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/spacebar"
+            />
+        <TextView 
+            android:id="@+id/tv_image_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/text_blue_on"
+            android:text="取消"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:background="@drawable/sel_item_bg"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZNTLuncher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="notif_server_starting">远程管理服务已启动</string>
+    <string name="notif_title">远程管理服务正在运行</string>
+    <string name="storage_warning">设备未挂载</string>
+    
+    
+    <string name="pref_vibrate_key">key_vibrate</string>
+    <string name="pref_sound_key">key_sound</string>
+    <string name="pref_noti_key">key_noti</string>
+    <string name="pref_haptic_key">key_haptic</string>
+    <string name="pref_wifi_on_key">key_wifi_on</string>
+    <string name="pref_wifi_off_key">key_wifi_off</string>
+    <string name="pref_onboot_key">key_onboot</string>
+    
+    <string name="autcon_incomplete">你必须配置端口和IP地址</string>
+    <string name="settings_title_autcon">自动连接</string>
+    <string name="settings_title_wifi">WIFI设置</string>
+    <string name="autocon">自动连接</string>
+    <string name="server_autocon">当你启动ADB的时候自动连接到电脑</string>
+    <string name="default_autocon">false</string>
+    <string name="pref_autocon_key">key_autocon</string>
+    <string name="autoconip">电脑名称/IP地址</string>
+    <string name="server_autoconip">电脑地址, 需要无线调试服务</string>
+    <string name="default_autoconip"></string>
+    <string name="pref_autoconip_key">key_autoconip</string>
+    <string name="autoconport">电脑开启的端口</string>
+    <string name="server_autoconport">默认端口是8555</string>
+    <string name="default_autoconport">8555</string>
+    <string name="pref_autoconport_key">key_autoconport</string>
+    
+    <string name="screenon">设备屏幕常亮</string>
+    <string name="server_screenon">设备不会进入休眠模式</string>
+    <string name="default_screenon">false</string>
+    <string name="pref_screenon_key">key_screenon</string>
+    
+
+</resources>

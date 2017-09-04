@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">店音</string>
+    <string name="app_hint">助你打造统一的店铺音乐形象</string>
+    <string name="second">S</string>
+    <string name="separate"> / </string>
+    <string name="init_time">00:00</string>
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="net_confirm">网络配置</string>
+    <string name="all_app">全部APP</string>
+    <string name="dev_idle">设备空闲中......</string>
+    <string name="loading">正在加载......</string>
+    <string name="exit">退出</string>
+    <string name="load_image_fail">"image load fail"</string>
+    <string name="parse_image_fail">"image parse fail"</string>
+    <string name="toast_musicplay_fail">music play error</string>
+    <string name="toast_videoplay_fail">video play error</string>
+    <string name="video_loading">Loading…</string>
+    <string name="video_speed_unit_second">S</string>
+    <string name="buffering">Loading…</string>
+    <string name="mp_unknown_artist">Unknow Artist</string>
+    <string name="mp_unknown_album">Unknow Album</string>
+    <string name="mp_cant_find_lyrics">the lrc can\'t be found</string>
+    <string name="mp_lyrics_tips">***   the lrc come from internet，just be reference   ***</string>
+    <string name="pref_vibrate_key">key_vibrate</string>
+    <string name="pref_sound_key">key_sound</string>
+    <string name="pref_noti_key">key_noti</string>
+    <string name="pref_haptic_key">key_haptic</string>
+    <string name="pref_wifi_on_key">key_wifi_on</string>
+    <string name="pref_wifi_off_key">key_wifi_off</string>
+    <string name="pref_onboot_key">key_onboot</string>
+    <string name="autcon_incomplete">你必须配置端口和IP地址</string>
+    <string name="settings_title_autcon">自动连接</string>
+    <string name="settings_title_wifi">WIFI设置</string>
+    <string name="autocon">自动连接</string>
+    <string name="server_autocon">当你启动ADB的时候自动连接到电脑</string>
+    <string name="default_autocon">false</string>
+    <string name="pref_autocon_key">key_autocon</string>
+    <string name="autoconip">电脑名称/IP地址</string>
+    <string name="server_autoconip">电脑地址, 需要无线调试服务</string>
+    <string name="default_autoconip"/>
+    <string name="pref_autoconip_key">key_autoconip</string>
+    <string name="autoconport">电脑开启的端口</string>
+    <string name="server_autoconport">默认端口是8555</string>
+    <string name="default_autoconport">8555</string>
+    <string name="pref_autoconport_key">key_autoconport</string>
+    <string name="screenon">设备屏幕常亮</string>
+    <string name="server_screenon">设备不会进入休眠模式</string>
+    <string name="default_screenon">false</string>
+    <string name="pref_screenon_key">key_screenon</string>
+    <string name="device_name_default">店音盒子</string>
+    <string name="network_type_wired">有线网络</string>
+    <string name="network_type_wireless">无线网络</string>
+    
+</resources>

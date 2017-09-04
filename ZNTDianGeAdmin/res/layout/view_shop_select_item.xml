@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <RelativeLayout 
+            android:id="@+id/view_music_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/view_shop_select_operation"
+            android:background="@drawable/sel_item_bg"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="6dp"
+            >
+            <ImageView 
+	            android:id="@+id/iv_shop_select_shop_icon"
+	            android:layout_width="42dp"
+	            android:layout_height="42dp"
+	            android:padding="6dp"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/icon_shop"
+	            />
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_shop_select_shop_icon"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical"
+	            >
+	            <TextView 
+		            android:id="@+id/tv_shop_select_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/normal_text_size"
+		            android:textColor="@color/text_black_on"
+		            android:singleLine="true"
+		            />
+	            <TextView 
+		            android:id="@+id/tv_shop_select_addr"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/SmallTextSize"
+		            android:textColor="@color/text_black_mid"
+		            android:singleLine="true"
+		            />
+	        </LinearLayout>
+        </RelativeLayout>
+        
+       <RelativeLayout 
+           	android:id="@+id/view_shop_select_operation"
+           	android:layout_width="62dp"
+        	android:layout_height="fill_parent"
+        	android:layout_alignTop="@+id/view_music_item_content"
+        	android:layout_alignBottom="@+id/view_music_item_content"
+        	android:layout_alignParentRight="true"
+           	android:orientation="horizontal"
+           	android:background="@drawable/sel_item_bg"
+	       	android:paddingTop="6dp"
+	       	android:paddingBottom="6dp"
+	       	android:clickable="false"
+	        >
+           <ImageView 
+               android:id="@+id/iv_shop_select_item_edit"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:layout_centerInParent="true"
+               />
+       </RelativeLayout>
+            
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/spacebar"
+        />
+
+    
+</LinearLayout>

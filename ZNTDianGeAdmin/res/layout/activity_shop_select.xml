@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        <com.znt.vodbox.view.listview.LJListView
+	        android:id="@+id/ptrl_shop_select"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        ></com.znt.vodbox.view.listview.LJListView>
+        <!-- <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/spacebar_0"
+            android:layout_above="@+id/view_shop_select_bottom"
+            /> -->
+        <!-- <LinearLayout 
+            android:id="@+id/view_shop_select_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            
+            <TextView 
+                android:id="@+id/tv_shop_select_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonTranslucent_2"
+                android:text="多选"
+                />
+            
+        </LinearLayout> -->
+        
+        <TextView 
+		    android:id="@+id/tv_shop_select_hint"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:textSize="@dimen/normal_text_size"
+		    android:visibility="gone"
+		    />
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    xmlns:app="http://schemas.android.com/apk/res/com.znt.diange">
+    
+    <ImageView 
+        android:id="@+id/iv_song_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout 
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        >
+        <!-- <com.znt.diange.view.ChildViewPager
+	        android:id="@+id/vp_song_header_image"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	        ></com.znt.diange.view.ChildViewPager> -->
+        
+        <com.znt.vodbox.view.CircleImageView 
+            android:id="@+id/civ_song_header_album_default"
+            android:layout_width="102dp"
+	    	android:layout_height="102dp"
+	    	android:scaleType="centerCrop"
+	    	android:src="@drawable/logo"
+	    	android:layout_centerInParent="true"
+	    	android:alpha="0.5"
+            />
+        <com.znt.vodbox.view.CircleImageView 
+            android:id="@+id/civ_song_header_album"
+            android:layout_width="102dp"
+	    	android:layout_height="102dp"
+	    	android:scaleType="centerCrop"
+	    	android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/view_song_header_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        >
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/view_song_header_refresh"
+            >
+            <ImageView 
+	            android:id="@+id/iv_song_header_status"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:visibility="gone"
+	            />
+	        
+	        <TextView 
+		        android:id="@+id/tv_song_header_music_name"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_toRightOf="@+id/iv_song_header_status"
+		        android:textSize="@dimen/normal_text_size"
+		        android:textColor="@color/text_blue_off"
+		        android:paddingLeft="2dp"
+		        android:paddingRight="22dp"
+		        android:paddingTop="6dp"
+		        android:singleLine="true"
+		        android:ellipsize="marquee" 
+		        android:focusable="true" 
+		        android:marqueeRepeatLimit="marquee_forever" 
+		        android:focusableInTouchMode="true" 
+		        android:scrollHorizontally="true"
+		        />
+        </RelativeLayout>
+        
+	    
+	    <LinearLayout
+	        android:id="@+id/view_song_header_refresh" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:paddingBottom="6dp"
+	        >
+	        <ImageView 
+	            android:id="@+id/iv_song_header_refresh"
+	            android:layout_width="12dp"
+	            android:layout_height="12dp"
+	            android:src="@drawable/icon_refresh"
+	            android:visibility="invisible"
+	            android:layout_gravity="center_vertical"
+	            />
+	        <TextView 
+		        android:id="@+id/tv_song_header_refresh"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:paddingLeft="4dp"
+		        android:textSize="@dimen/sub_text_size"
+		        android:textColor="@color/white"
+		        android:visibility="gone"
+		        />
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:id="@+id/tv_song_header_bg_song_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dp"
+	        android:textSize="@dimen/sub_text_size"
+	        android:textColor="@color/white"
+	        android:padding="2dp"
+	        android:singleLine="true"
+	        />
+	    
+	    <RelativeLayout 
+	        android:id="@+id/view_song_header_my_list"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="12dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:clickable="true"
+	        >
+	        <ImageView 
+		        android:layout_width="28dp"
+		        android:layout_height="28dp"
+		        android:layout_centerInParent="true"
+		        android:src="@drawable/icon_my_song_list"
+		        />
+	    </RelativeLayout>
+	    
+    </RelativeLayout>
+
+</RelativeLayout>
